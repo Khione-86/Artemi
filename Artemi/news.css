@@ -1,0 +1,349 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: white;
+}
+
+header {
+    background: linear-gradient(to right, #1c1f2b, #011242);
+    box-shadow: 0px 4px 10px black;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.top-left-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    flex: 1;
+    text-align: left;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content:center;
+}
+
+.logo-image {
+    height: 35px;
+    max-width: 100%;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 195, 255);
+    text-shadow: 0 0 8px rgba(0, 195, 255, 0.8), 0 0 16px rgba(0, 195, 255, 0.6);
+    background-color: #1c1f2b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: white; 
+}
+
+.nav-news {
+    color:rgb(0, 195, 255);
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+    
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:#1c1f2b;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+}
+
+.parallax {
+    background-image: url('satelite.webp');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    position: relative;
+}
+
+.parallax-logo {
+    width: 50px;
+    margin: 0 auto 20px;
+    display: block;
+    position: relative;
+    left: -10px;
+}
+
+.parallax-overlay-text {
+    position:absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    max-width: 400px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px black;
+}
+
+.andromeda-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.andromeda-text {
+    flex: 1;
+    max-width: 650px;
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1px;
+}
+
+.andromeda-image-container {
+    flex: 1;
+    max-width: 400px;
+    text-align: right;
+    padding: 20px;
+}
+
+.andromeda-image {
+    width: 105%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.exoplanet-image-container {
+    text-align: left;
+    margin-top: 1px;
+    padding: 10px;
+}
+
+.exoplanet-image {
+    width: 140%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.exoplanet-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.exoplanet-text {
+    flex: 1;
+    max-width: 600px;
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.whitedwarf-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.whitedwarf-text {
+    flex: 1;
+    max-width: 600px;
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.whitedwarf-image-container {
+    flex: 1;
+    max-width: 600px;
+    text-align: right;
+    padding: 20px;
+}
+
+.whitedwarf-image {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.quote {
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background: linear-gradient(to right, #1c1f2b, #011242);
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    color: white;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+footer {
+    background-color: #1c1f2b;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+    margin: 10px 0;
+  }
+  
+  .footer-logo {
+    height: 40px;
+  }
+  
+  .footer-links,
+  .privterms {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .footer-links li a,
+  .privterms li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s;
+  }
+  
+  .footer-links li a:hover,
+  .privterms li a:hover {
+    color:hsl(198, 100%, 50%);
+  }
+  
+  .sosmed a {
+    margin: 10px;
+  }
+  
+  .sosmed img {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid grey;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+
+.sun-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.sun-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 6px black;
+    background-color: transparent;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
